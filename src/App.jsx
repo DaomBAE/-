@@ -8,6 +8,7 @@ import EventPage from "./pages/Event";
 import Homepage from "./pages/Home";
 import ReactPlayer from "react-player";
 import Mypage from "./pages/Mypage";
+import Ticket from "./pages/Ticket";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Header />
           <Routes>
             <Route exact path="/" element={<Homepage />} />
+            <Route path="/Ticket" element={<Ticket />} />
             <Route path="/Event" element={<EventPage />} />
             <Route path="/Mypage" element={<Mypage />} />
           </Routes>
